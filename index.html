@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="headerContainer">
+                <p class="titleText">DevDetective</p>
+                <button onclick="toggleLD()" class="modeBtn lightMode">
+                    <p>Light</p>
+                    <img src="assets/images/sun-icon.svg">
+                </button>
+                <button onclick="toggleLD()" class="modeBtn darkMode activeBtn">
+                    <p>Dark</p>
+                    <img src="assets/images/moon-icon.svg" alt="">
+                </button>
+            </div>
+            <div class="searchContainer">
+                <div class="searchTab">
+                    <img src="assets/images/search-icon.svg">
+                    <input type="search" class="searchBar" placeholder="Enter a GitHub Username..." data-searchBar>
+                    <p class="errorText">No Search Record Found</p>
+                </div>
+                <button type="submit" class="searchBtn" data-searchBtn>Search</button>
+            </div>
+            <div class="heroContainer">
+                <div class="infoContainer">
+                    <div class="imgContainer">
+                        <img src="assets/Rohit img.jpeg" height="125px" width="125px" class="heroImg" data-heroImg>
+                    </div>
+                    <div class="basicInfo">
+                        <div class="nameId">
+                            <p class="heroName" data-heroName></p>
+                            <a href="" class="heroGithubLink" data-heroLink></a>
+                        </div>
+                        <p class="joiningInfo" data-joiningDate></p>
+                    </div>
+                </div>
+                <div class="info2Container">
+                    <p class="desc" data-desc></p>
+                    <div class="infoBoxes">
+                        <div class="infoBox infoBox-0 repos">
+                            <p class="infoText">Repos</p>
+                            <p class="infoCount" data-repoCount></p>
+                        </div>
+                        <div class="infoBox infoBox-1 followers">
+                            <p class="infoText">Followers</p>
+                            <p class="infoCount" data-followerCount></p>
+                        </div>
+                        <div class="infoBox infoBox-2 following">
+                            <p class="infoText">Following</p>
+                            <p class="infoCount" data-followingCount></p>
+                        </div>
+                    </div>
+                    <div class="socialInfo">
+                        <div class="location socialInfoBox">
+                            <img src="assets/images/location-icon.svg" alt="">
+                            <p data-location></p>
+                        </div>
+                        <div class="webLinkBox socialInfoBox">
+                            <img src="assets/images/website-icon.svg" alt="">
+                            <a href="" class="webLink" data-webLink></a>
+                        </div>
+                        <div class="twitterLinkBox socialInfoBox">
+                            <img src="assets/images/twitter-icon.svg" alt="">
+                            <p><a href class="twitterLink" target="_blank" data-twitterId></a></p>
+                        </div>
+                        <div class="companyName socialInfoBox">
+                            <img src="assets/images/company-icon.svg" alt="">
+                            <p data-company></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/07f8f9c90c.js" crossorigin="anonymous"></script>
+</body>
+</html>

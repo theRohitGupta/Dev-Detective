@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+.wrapper{
+    background-color: #F6F8FF;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.wrapperDM{
+    background-color: #141D2F;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 60%;
+}
+@media screen and (max-width: 1190px) {
+    .container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 880px) {
+    .container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 790px) {
+    .container{
+        width: 80%;
+    }
+    .searchContainer{
+        position: relative
+    }
+    .errorText{
+        position: absolute;
+        right: 0%;
+        top: -30%;
+    }
+    .basicInfo{
+        flex-direction: column;
+    }
+    .info2Container{
+        padding-top: 1rem !important;
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+    .infoContainer{
+        gap: 2rem !important;
+    }
+    .infoCount{
+        font-size: 1.5rem;
+    }
+    .socialInfo{
+        grid-template-columns: 1fr !important;
+    }
+    .headerContainer{
+        padding: 0 !important;
+        padding-top: 1rem !important;
+    }
+    .searchBar{
+        font-size: 0.7rem !important;
+    }
+    .searchBar::placeholder{
+        font-size: 0.7rem !important;
+    }
+    .searchBtn{
+        font-size: 0.8rem !important;
+        padding: 8px 12px !important;
+    }
+    .heroName{
+        font-size: 1.5rem !important;
+    }
+    .heroGithubLink{
+        font-size: 0.8rem !important;
+    }
+    .joiningInfo{
+        font-size: 0.8rem !important;
+    }
+    .errorText{
+        top: -40%;
+        font-size: 0.8rem !important;
+    }
+    .socialInfoBox{
+        height: 1.5rem !important;
+    }
+    .socialInfoBox img{
+        height: 15px !important;
+    }
+    .socialInfoBox p{
+        font-size: 0.8rem !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .heroImg{
+        height: 100px;
+        width: 100px;
+    }
+    .titleText{
+        font-size: 1.2rem !important;
+    }
+    .modeBtn{
+        font-size: 0.8rem !important;
+    }
+    .heroContainer{
+        padding: 1rem !important;
+    }
+    .heroName{
+        font-size: 1.2rem !important;
+    }
+    .heroGithubLink,.joiningInfo{
+        font-size: 0.7rem !important;
+    } 
+    .infoBoxes{
+        gap: 0.2rem !important;
+        padding: 0.5rem !important;
+    }
+    .searchTab img{
+        height: 15px;
+        width: 15px;
+    }
+    .searchBar{
+        font-size: 0.5rem !important;
+    }
+    .searchBar::placeholder{
+        font-size: 0.5rem !important;
+    }
+    .searchBtn{
+        font-size: 0.5rem !important;
+        padding: 5px 10px !important;
+    }
+    .errorText{
+        top: -45% !important;
+        font-size: 0.7rem !important;
+    }
+    .desc{
+        font-size: 0.5rem;
+    }
+    .infoCount{
+        font-size: 1rem !important;
+    }
+    .socialInfoBox{
+        height: 1rem !important;
+    }
+    .socialInfoBox p{
+        font-size: 0.5rem !important;
+    }
+    .webLink{
+        font-size: 0.5rem !important;
+    }
+
+}
+.headerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.titleText{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #4B6A9B;
+}
+.titleTextDM{
+    color: white;
+}
+.modeBtn{
+    all: unset;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    display: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.modeBtn:hover{
+    scale: 1.07;
+}
+.lightMode{
+    color: white;
+}
+.darkMode{
+    color: #6179A1;
+}
+.activeBtn{
+    display: flex;
+}
+
+.searchContainer{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    gap: 0.3rem;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+.searchContainerDM{
+    background-color: #1E2A47;
+}
+.searchTab{
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.searchBar{
+    all: unset;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+    width: 80%;
+    color: #4B6A9B;
+}
+.searchBarDM{
+    color: white;
+}
+.searchBar::placeholder{
+    color: #4B6A9B;
+    caret-color: #4B6A9B;
+}
+.searchBarDM::placeholder{
+    color: white;
+    caret-color: white;
+}
+.errorText{
+    color: red;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    display: none;
+}
+.errorText.active{
+    display: block;
+}
+.searchBtn{
+    all: unset;
+    background-color: #0079FF;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 15px 25px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+.searchBtn:hover{
+    background-color: #60ABFF;
+}
+.heroContainer{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    padding: 2rem;
+}
+.heroContainerDM{
+    background-color: #1E2A47;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.heroImg{
+    border-radius: 100%;
+}
+.infoContainer{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.basicInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1rem 0;
+}
+.heroName{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #2B3442;
+    padding-bottom: 0.3rem;
+}
+.heroNameDM{
+    color: white;
+}
+.heroGithubLink{
+    color: #0079FF;
+}
+.joiningInfo{
+    color: #6179A1;
+    padding-top: 0.5rem;
+}
+.joiningInfoDM{
+    color: white;
+}
+.info2Container{
+    width: 70%;
+}
+.desc{
+    color: #6179A1;
+}
+.descDM{
+    color: #C7CAD1;
+}
+.infoBoxes{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    background-color: #F6F8FF;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    border-radius: 15px;
+}
+.infoBoxesDM{
+    background-color: #141D2F;
+}
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.infoText{
+    color: #6179A1;
+    font-size: 0.8rem;
+}
+.infoTextDM{
+    color: white;
+    opacity: 0.7;
+}
+.infoCount{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2B3442;
+}
+.infoCountDM{
+    color: white;
+}
+.socialInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem 2rem;
+}
+.socialInfoBox{
+    display: flex;
+    gap: 1rem;
+    padding: 0.2rem;
+    color: #4B6A9B;
+    height: 2.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.socialInfoBox img{
+    height: 1.5rem;
+}
+.socialInfoBoxDM{
+    color: white;
+    filter: brightness(1000%);
+}
+.twitterLink,.webLink{
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.webLink{
+    font-size: 0.8rem;
+    word-break: break-all;
+}
