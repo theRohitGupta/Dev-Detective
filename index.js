@@ -11,16 +11,18 @@ function toggleLD(){
     document.querySelector(".joiningInfo").classList.toggle("joiningInfoDM");
     document.querySelector(".desc").classList.toggle("descDM");
     document.querySelector(".infoBoxes").classList.toggle("infoBoxesDM");  
-    document.querySelector(".home-btn").classList.toggle("home-btnDM");  
     const allInfoText = document.querySelectorAll(".infoText");
+    console.log(allInfoText);
     allInfoText.forEach((i) => {
         i.classList.toggle("infoTextDM");
     });
     const allInfoCount = document.querySelectorAll(".infoCount");
+    console.log(allInfoCount);
     allInfoCount.forEach((i) => {
         i.classList.toggle("infoCountDM");
     });
     const allSocialInfoBox = document.querySelectorAll(".socialInfoBox");
+    console.log(allSocialInfoBox);
     allSocialInfoBox.forEach((i) => {
         i.classList.toggle("socialInfoBoxDM");
     });
@@ -30,10 +32,10 @@ const searchInput = document.querySelector("[data-searchBar]");
 const errorText = document.querySelector(".errorText");
 const searchBtn = document.querySelector("[data-searchBtn]");
 
-const heroImg = document.querySelector("[data-heroImg");
-const heroName = document.querySelector("[data-heroName");
-const heroLink = document.querySelector("[data-heroLink");
-const heroJoiningDate = document.querySelector("[data-joiningDate");
+const heroImg = document.querySelector("[data-heroImg]");
+const heroName = document.querySelector("[data-heroName]");
+const heroLink = document.querySelector("[data-heroLink]");
+const heroJoiningDate = document.querySelector("[data-joiningDate]");
 const monthData = ["January","Feburary","March","April","May","June","July","August","September","October","November","December"];
 const heroDesc = document.querySelector("[data-desc]");
 const repoCount = document.querySelector("[data-repoCount]");
