@@ -10,7 +10,8 @@ function toggleLD(){
     document.querySelector(".heroName").classList.toggle("heroNameDM");
     document.querySelector(".joiningInfo").classList.toggle("joiningInfoDM");
     document.querySelector(".desc").classList.toggle("descDM");
-    document.querySelector(".infoBoxes").classList.toggle("infoBoxesDM");    
+    document.querySelector(".infoBoxes").classList.toggle("infoBoxesDM");  
+    document.querySelector(".home-btn").classList.toggle("home-btnDM");  
     const allInfoText = document.querySelectorAll(".infoText");
     allInfoText.forEach((i) => {
         i.classList.toggle("infoTextDM");
