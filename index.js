@@ -12,17 +12,17 @@ function toggleLD(){
     document.querySelector(".desc").classList.toggle("descDM");
     document.querySelector(".infoBoxes").classList.toggle("infoBoxesDM");  
     const allInfoText = document.querySelectorAll(".infoText");
-    console.log(allInfoText);
+    // console.log(allInfoText);
     allInfoText.forEach((i) => {
         i.classList.toggle("infoTextDM");
     });
     const allInfoCount = document.querySelectorAll(".infoCount");
-    console.log(allInfoCount);
+    // console.log(allInfoCount);
     allInfoCount.forEach((i) => {
         i.classList.toggle("infoCountDM");
     });
     const allSocialInfoBox = document.querySelectorAll(".socialInfoBox");
-    console.log(allSocialInfoBox);
+    // console.log(allSocialInfoBox);
     allSocialInfoBox.forEach((i) => {
         i.classList.toggle("socialInfoBoxDM");
     });
