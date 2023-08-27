@@ -83,4 +83,4 @@ async function searchId(id){
     twitterIdData.href = `https://twitter.com/${data?.twitter_username}`;
     companyData.innerText = data?.company;
 }
-searchId("RG-CREATOR");
+searchId("theRohitGupta");
