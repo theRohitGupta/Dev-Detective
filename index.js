@@ -11,6 +11,7 @@ function toggleLD(){
     document.querySelector(".joiningInfo").classList.toggle("joiningInfoDM");
     document.querySelector(".desc").classList.toggle("descDM");
     document.querySelector(".infoBoxes").classList.toggle("infoBoxesDM");  
+    document.querySelector(".home-btn").classList.toggle("home-btnDM");  
     const allInfoText = document.querySelectorAll(".infoText");
     allInfoText.forEach((i) => {
         i.classList.toggle("infoTextDM");
@@ -29,10 +30,10 @@ const searchInput = document.querySelector("[data-searchBar]");
 const errorText = document.querySelector(".errorText");
 const searchBtn = document.querySelector("[data-searchBtn]");
 
-const heroImg = document.querySelector("[data-heroImg]");
-const heroName = document.querySelector("[data-heroName]");
-const heroLink = document.querySelector("[data-heroLink]");
-const heroJoiningDate = document.querySelector("[data-joiningDate]");
+const heroImg = document.querySelector("[data-heroImg");
+const heroName = document.querySelector("[data-heroName");
+const heroLink = document.querySelector("[data-heroLink");
+const heroJoiningDate = document.querySelector("[data-joiningDate");
 const monthData = ["January","Feburary","March","April","May","June","July","August","September","October","November","December"];
 const heroDesc = document.querySelector("[data-desc]");
 const repoCount = document.querySelector("[data-repoCount]");
@@ -82,4 +83,4 @@ async function searchId(id){
     twitterIdData.href = `https://twitter.com/${data?.twitter_username}`;
     companyData.innerText = data?.company;
 }
-searchId("theRohitGupta");
+searchId("therohitgupta");
