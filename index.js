@@ -11,7 +11,6 @@ function toggleLD(){
     document.querySelector(".joiningInfo").classList.toggle("joiningInfoDM");
     document.querySelector(".desc").classList.toggle("descDM");
     document.querySelector(".infoBoxes").classList.toggle("infoBoxesDM");  
-    document.querySelector(".home-btn").classList.toggle("home-btnDM");  
     const allInfoText = document.querySelectorAll(".infoText");
     allInfoText.forEach((i) => {
         i.classList.toggle("infoTextDM");
@@ -77,7 +76,7 @@ async function searchId(id){
     followingCount.innerText = data?.following;
     locationData.innerText = data?.location;
     let webLink = data?.blog; 
-    webLinkData.innerText = webLink.substr(8);
+    webLinkData.innerText = webLink;
     webLinkData.href = data?.blog;
     twitterIdData.innerText = data?.twitter_username;
     twitterIdData.href = `https://twitter.com/${data?.twitter_username}`;
