@@ -77,7 +77,7 @@ async function searchId(id){
     locationData.innerText = data?.location;
     let webLink = data?.blog; 
     webLinkData.innerText = webLink;
-    webLinkData.href = data?.blog;
+    webLinkData.href = (data?.blog).startsWith('https://') ? data?.blog : `https://${data?.blog}`;
     twitterIdData.innerText = data?.twitter_username;
     twitterIdData.href = `https://twitter.com/${data?.twitter_username}`;
     companyData.innerText = data?.company;
